@@ -14,7 +14,7 @@ const CategoriasProvider = (props) => {
     // Ejecutar llamado a la API
     useEffect(() => {
         const obtenerCategorias = async() => {
-            const url = 'www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
+            const url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
 
             const categorias = await axios.get(url);
 

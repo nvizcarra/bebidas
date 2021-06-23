@@ -31,6 +31,12 @@ const Formulario = () => {
                         name="categoria"
                     >
                         <option value="">-- Selecciona Categoría --</option>
+                        {categorias.map(categoria => (
+                            <option 
+                                key={categoria.strCategory}
+                                value={categoria.strCategory}
+                            >{categoria.strCategory}</option>
+                        ))}
                     </select>
                 </div>
 
@@ -38,7 +44,7 @@ const Formulario = () => {
                     <input
                         type="submit"
                         className="btn btn-block btn-primary"
-                        value="Buscar Bebidas "
+                        value="Buscar Bebidas"
                     />
                 </div>
             </div>
