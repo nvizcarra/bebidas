@@ -15,8 +15,8 @@ const ListaRecetas = () => {
                 receta={receta}
             />
         ))}
-    </div> );
-
+    </div> 
+);
 }
 
 export default ListaRecetas;
